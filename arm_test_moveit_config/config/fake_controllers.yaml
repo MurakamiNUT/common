@@ -1,0 +1,9 @@
+controller_list:
+  - name: fake_arm_test_controller
+    joints:
+      - body0_joint_yaw
+      - body1_joint
+      - body2_joint
+      - body3_joint
+      - body3_joint_yaw
+      - body3_joint_role

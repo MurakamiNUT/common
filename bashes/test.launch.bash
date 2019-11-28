@@ -1,2 +1,2 @@
 #!/bin/bash
-roslaunch beginner_tutorials test.launch
+roslaunch pc_side_programs test.launch

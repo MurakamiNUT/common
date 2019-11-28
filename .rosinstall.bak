@@ -1,0 +1,12 @@
+- git:
+    local-name: moveit_tutorials
+    uri: https://github.com/ros-planning/moveit_tutorials.git
+- git:
+    local-name: nexis_rviz
+    uri: git@github.com:MurakamiNUT/nexis_rviz.git
+- git:
+    local-name: pc_side_programs
+    uri: git@github.com:MurakamiNUT/pc_side_programs.git
+- git:
+    local-name: robot_side_programs
+    uri: git@github.com:MurakamiNUT/robot_side_programs.git

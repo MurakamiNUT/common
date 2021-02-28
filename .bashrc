@@ -121,15 +121,32 @@ alias eb='gedit ~/.bashrc'
 alias sb='source ~/.bashrc'
 alias gs='git status'
 alias gp='git pull'
+alias ga='git add --all'
 alias cw='cd ~/catkin_ws'
 alias cs='cd ~/catkin_ws/src'
 alias cm='cd ~/catkin_ws && catkin_make'
 alias st='./catkin_ws/src/common/exe/exe.bash'
+alias stest='./catkin_ws/src/common/exe/exe_test.bash'
+alias rec='cd ~/catkin_ws/src/bag && ~/catkin_ws/src/common/exe/record.bash'
+alias reci='cd ~/catkin_ws/src/bag/input && ~/catkin_ws/src/common/exe/record_input.bash'
+alias csv='cd ~/catkin_ws/src/bag/csv && ~/catkin_ws/src/common/exe/bag2csv.bash'
 source /opt/ros/kinetic/setup.bash
 source ~/catkin_ws/devel/setup.bash
 
-#export ROS_MASTER_URI=http://localhost:11311
-#export ROS_HOSTNAME=localhost
-export ROS_MASTER_URI=http://192.168.1.3:11311
-export ROS_HOSTNAME=192.168.1.3
+export ROS_MASTER_URI=http://localhost:11311
+export ROS_HOSTNAME=localhost
+#export ROS_MASTER_URI=http://192.168.1.3:11311
+#export ROS_HOSTNAME=192.168.1.3
 export ROS_IP=192.168.1.3
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(openrave-config --python-dir)/openravepy/_openravepy_
+export PYTHONPATH=$PYTHONPATH:$(openrave-config --python-dir)
+source `openrave-config --share-dir`/openrave.bash
+alias eb='code ~/.bashrc'
+alias sb='source ~/.bashrc'
+alias gs='git status'
+alias gp='git pull'
+alias cw='cd ~/catkin_ws'
+alias cs='cd ~/catkin_ws/src'
+alias cm='cd ~/catkin_ws && catkin_make'
+# source /opt/ros/kinetic/setup.bash
+source ~/catkin_ws/devel/setup.bash
